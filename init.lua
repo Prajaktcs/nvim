@@ -65,6 +65,7 @@ require('custom.treesitter')
 require('custom.which_key')
 require('custom.lsp')
 require('custom.prettier')
+require('custom.linter')
 
 -- [[ Setting options ]]
 -- See `:help vim.o`

@@ -193,4 +193,15 @@ require('lazy').setup({
   },
   { "vim-test/vim-test" },
   { "github/copilot.vim" },
+    {
+      "zbirenbaum/copilot.lua",
+      cmd = "Copilot",
+      event = "InsertEnter",
+  },
+  {
+      "zbirenbaum/copilot-cmp",
+      config = function()
+          require("copilot_cmp").setup()
+      end,
+  },
 }, {})
