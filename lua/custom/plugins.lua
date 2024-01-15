@@ -75,6 +75,8 @@ require('lazy').setup({
     end,
   },
 
+  { 'mfussenegger/nvim-lint' },
+
   {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
@@ -189,5 +191,6 @@ require('lazy').setup({
       },
     }
   },
-  { "vim-test/vim-test" }
+  { "vim-test/vim-test" },
+  { "github/copilot.vim" },
 }, {})
