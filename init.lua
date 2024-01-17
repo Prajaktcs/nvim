@@ -62,10 +62,10 @@ require('custom.key_maps')
 require('custom.autocmd')
 require('custom.leader_shortcuts')
 require('custom.treesitter')
-require('custom.which_key')
 require('custom.lsp')
 require('custom.prettier')
 require('custom.linter')
+require('custom.copilot')
 
 -- [[ Setting options ]]
 -- See `:help vim.o`

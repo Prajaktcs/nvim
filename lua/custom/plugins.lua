@@ -49,10 +49,8 @@ require('lazy').setup({
     },
   },
 
-  -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim',                opts = {} },
-  {
     -- Adds git releated signs to the gutter, as well as utilities for managing changes
+   {
     'lewis6991/gitsigns.nvim',
     opts = {
       -- See `:help gitsigns.txt`
@@ -91,19 +89,20 @@ require('lazy').setup({
     },
   },
 
-  { "lukas-reineke/indent-blankline.nvim", main = "ibl",  opts = {} },
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim',               opts = {} },
 
   -- Fuzzy Finder (files, lsp, etc)
-  { 'nvim-telescope/telescope.nvim',
+  {
+    'nvim-telescope/telescope.nvim',
     version = '*',
     dependencies = {
       'nvim-lua/plenary.nvim',
       "nvim-telescope/telescope-live-grep-args.nvim",
     },
 
-    config = function ()
+    config = function()
       require("telescope").load_extension("live_grep_args")
     end
   },
@@ -167,7 +166,7 @@ require('lazy').setup({
   { "almo7aya/openingh.nvim" },
   {
     "epwalsh/obsidian.nvim",
-    version = "*",   -- recommended, use latest release instead of latest commit
+    version = "*", -- recommended, use latest release instead of latest commit
     ft = "markdown",
     -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
     -- event = {
@@ -192,16 +191,10 @@ require('lazy').setup({
     }
   },
   { "vim-test/vim-test" },
-  { "github/copilot.vim" },
-    {
-      "zbirenbaum/copilot.lua",
-      cmd = "Copilot",
-      event = "InsertEnter",
+  {
+    "zbirenbaum/copilot.lua",
   },
   {
-      "zbirenbaum/copilot-cmp",
-      config = function()
-          require("copilot_cmp").setup()
-      end,
+    "zbirenbaum/copilot-cmp",
   },
 }, {})

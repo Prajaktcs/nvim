@@ -35,3 +35,8 @@ vim.keymap.set('n', '<leader>tf', ":TestFile", { desc = "Run Current file" })
 vim.keymap.set('n', '<leader>ts', ":TestSuite", { desc = "Run Test suite" })
 vim.keymap.set('n', '<leader>tl', ":TestLast", { desc = "Runs the last test" })
 vim.keymap.set('n', '<leader>tv', ":TestVisit", { desc = "Visit the file that was last run" })
+
+-- [[ Configuring github ]]
+vim.keymap.set('n', '<leader>g', ":Github<cr>", { desc = 'Github' })
+vim.keymap.set('n', '<leader>gf', ":OpenInGHFile", { desc = "Open the current file in github" })
+vim.keymap.set('n', '<leader>gl', ":OpenInGHFileLines", { desc = "Open the current file line in github" })
