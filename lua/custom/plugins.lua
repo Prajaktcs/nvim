@@ -49,8 +49,8 @@ require('lazy').setup({
     },
   },
 
-    -- Adds git releated signs to the gutter, as well as utilities for managing changes
-   {
+  -- Adds git releated signs to the gutter, as well as utilities for managing changes
+  {
     'lewis6991/gitsigns.nvim',
     opts = {
       -- See `:help gitsigns.txt`
@@ -197,4 +197,18 @@ require('lazy').setup({
   {
     "zbirenbaum/copilot-cmp",
   },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    init = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+    end,
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  },
+  { "nvimtools/none-ls.nvim" },
 }, {})

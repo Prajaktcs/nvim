@@ -29,6 +29,7 @@ require('custom.lsp')
 require('custom.prettier')
 require('custom.linter')
 require('custom.copilot')
+require('custom.none_ls')
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
